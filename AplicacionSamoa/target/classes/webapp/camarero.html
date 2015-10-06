@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    
+	<title>Camarero Samoa</title>
+	
+    <script type="text/javascript" src="js/camarero.js"></script>
+    <link href="css/camarero.css" rel="stylesheet">
+</head>
+<body onload="setTimeout(init_camarero,0);">
+
+	<div class="modal-error" id="errorDiv">
+		<p class="modal-error-message" id="errorMessage">Se ha perdido la conexión. Reconectando...<p>
+	</div>
+
+	<div class="navbar top fixed">
+		<button id="dropdownMenu1" onclick="showDropDownList()">Cargando...<span class="caret-down"></span></button>
+		<button id="cleanTableButton" onclick="cleanTable()">Limpiar mesa</button>
+	</div>
+	
+	<div class="content-area" id="tables">
+	
+	</div>
+	
+	<div class="content-area" id="products">
+	
+	</div>
+	
+	<div class="navbar bottom fixed">
+		<button onclick="addDrinking();">+1</button>
+		<button onclick="deleteDrinking();">-1</button>
+		<button onclick="sendNewDrinkingsData();">Enviar pedido</button>
+	</div>
+</body>
+</html>
